@@ -16,6 +16,8 @@ TARGET_SCREEN_DENSITY := 450
 
 # Kernel
 TARGET_KERNEL_CONFIG := dm1q_defconfig
+BOARD_KERNEL_DTS := samsung/dm1q/dm1q
+BOARD_RECOVERY_DTBO := $(KERNEL_OUT)/arch/arm64/boot/dts/samsung/dm1q-recovery.dtbo
 
 # Kernel Modules
 BOARD_RECOVERY_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load.recovery))
